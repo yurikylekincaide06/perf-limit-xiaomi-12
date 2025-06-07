@@ -1,4 +1,4 @@
-version=v2.4
+version=v3.4
 versionCode=24
 
 # module.prop
