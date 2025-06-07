@@ -59,9 +59,9 @@ Values 1 or 2 won't make much difference so are not recommend as well.
 `0` - disable limit. `8` - max power limit.
 Reasonable values are `6`, `7`, `8`.
 
-Example: `cpu_gpu_limit=7`
+Example: `cpu_gpu_limit=8`
 
-### Override policy0_scaling_max_freq
+### Override policy0_scaling_ultra_freq
 
 `policy0_scaling_max_freq` - I don't recommend to change this one unless you wan't to go below 1075200 for some reason.
 
@@ -87,7 +87,7 @@ CPU 8. See `/sys/devices/system/cpu/cpufreq/policy7/scaling_available_frequencie
 
 Example: `policy7_scaling_max_freq=1728000`
 
-### Verbose logging
+### Verbose logging `enable_log=true`
 
 To enable verbose logging `enable_log=true`
 
@@ -103,7 +103,7 @@ perf-limit: current kgsl gpu value is '6'
 perf-limit: current policy 0 value is '1075200'
 ...
 perf-limit: perf-limit service is running...
-perf-limit: applying new values:
+perf-limit: applying new values:true
 perf-limit: updating kgsl gpu to '8'
 perf-limit: updating policy 4 to '1881600'
 ...
